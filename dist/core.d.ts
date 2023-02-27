@@ -1,0 +1,12 @@
+import type { Config, Direction, DistanceFunctions, Priorities, Rect, SpatialEventDetail } from './types';
+export declare const getRect: (elem: HTMLElement) => Rect | null;
+export declare const partition: (rects: Rect[], targetRect: Rect, straightOverlapThreshold: number) => Rect[][];
+export declare const prioritize: (priorities: Priorities) => Rect[] | null;
+export declare const distanceBuilder: (targetRect: Rect) => DistanceFunctions;
+export declare const navigate: (target: HTMLElement, direction: Direction, candidates: HTMLElement[], config: Config) => HTMLElement;
+export declare const parseSelector: (selector: string | NodeList | HTMLElement) => HTMLElement[];
+export declare const matchSelector: (elem: HTMLElement, selector: string | HTMLElement[] | HTMLElement) => boolean;
+export declare const getCurrentFocusedElement: () => HTMLElement | null;
+export declare const extend: (out: any, ...sources: any[]) => any;
+export declare const exclude: (elemList: any, excludedElem: any) => any;
+export declare const dispatch: (elem: HTMLElement, type: string, details?: SpatialEventDetail, cancelable?: boolean) => boolean;

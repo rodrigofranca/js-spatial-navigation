@@ -1,0 +1,7 @@
+
+> spatial-navigation@1.0.0 build /Users/rfranca/Documents/Projects/rodrigofranca.com/packages/spatial-navigation
+> tsc --build
+
+src/core.ts(306,7): error TS2304: Cannot find name 'jquery'.
+src/core.ts(307,12): error TS2304: Cannot find name 'jquery'.
+ ELIFECYCLE  Command failed with exit code 1.
